@@ -256,7 +256,7 @@ div.remote-session .platform svg {
 }
 
 div.remote-session-list {
-    background: white;
+    background: color(bg);
     width: 220px;
     flow: horizontal;
 }
@@ -290,7 +290,7 @@ div.remote-session-list .name .username {
 }
 
 div.remote-session .text {
-    background: white;
+    background: color(bg);
     position: absolute;
     height: 3em;
     width: 100%;
