@@ -21,16 +21,17 @@ html {
 }
 
 html.darktheme {
-    var(gray-bg): #292929;
     var(bg): #141414;
+    var(gray-bg): #333;
+    var(border): #555;
+
     var(text): white;
+    var(placeholder): #555;
     var(lighter-text): #888;
-    var(light-text): #666;
+    var(light-text): #aaa;
 
     var(button): #2C8CFF;
-    var(border): #ccc;
     var(hover-border): #999;
-    var(placeholder): #aaa;
     var(dark-red): #A72145;
     var(dark-yellow): #FBC732;
     var(dark-blue): #2E2459;

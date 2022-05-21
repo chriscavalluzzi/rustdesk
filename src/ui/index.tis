@@ -884,6 +884,7 @@ function self.ready() {
         view.focus = $(#remote_id);
     }
     refreshCurrentUser();
+    setDarkTheme();
 }
 
 function showAbout() {

@@ -80,8 +80,8 @@ div.sessions-tab svg {
 div.sessions-tab span.active {
     cursor: default;
     border-radius: 3px;
-    background: white;
-    color: black;
+    background: color(bg);
+    color: color(text);
 }
 
 div.search-id {
