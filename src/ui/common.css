@@ -21,8 +21,8 @@ html {
 }
 
 html.darktheme {
-    var(bg): #141414;
-    var(gray-bg): #333;
+    var(bg): #252525;
+    var(gray-bg): #141414;
     var(border): #555;
 
     var(text): white;
