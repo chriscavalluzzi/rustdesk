@@ -318,13 +318,13 @@ svg#menu {
 }
 
 svg#menu:hover {
-    color: black;
+    color: color(text);
     border-radius: 1em;
     background: color(gray-bg);
 }
 
 svg#edit:hover {
-    color: black;
+    color: color(text);
 }
 
 svg#edit {

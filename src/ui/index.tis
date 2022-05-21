@@ -176,11 +176,9 @@ function updateTheme() {
     var root_element = self;
     if (handler.get_option("enable-darktheme") == "") {
         // enable dark theme
-        stdout.println("Enabling..."); // DEV
         root_element.attributes.toggleClass("darktheme", true);
     } else {
         // disable dark theme
-        stdout.println("Disabling..."); // DEV
         root_element.attributes.toggleClass("darktheme", false);
     }
 }

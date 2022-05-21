@@ -26,9 +26,9 @@ html.darktheme {
     var(border): #555;
 
     var(text): white;
+    var(light-text): #999;
+    var(lighter-text): #777;
     var(placeholder): #555;
-    var(lighter-text): #888;
-    var(light-text): #aaa;
 
     var(button): #2C8CFF;
     var(hover-border): #999;
