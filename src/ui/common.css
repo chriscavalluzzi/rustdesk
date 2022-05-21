@@ -98,6 +98,15 @@ input.outline-focus:focus {
     outline: color(button) solid 3px;
 }
 
+textarea {
+    background: color(bg);
+    color: color(text);
+}
+
+textarea:empty {
+    color: color(placeholder);
+}
+
 @set my-scrollbar
 {
   .prev { display:none; }
@@ -390,7 +399,7 @@ div#msgbox .caption {
   height: 2em;
   line-height: 2em;
   text-align: center;
-  color: white; 
+  color: color(bg);
   font-weight: bold;
 }
 
