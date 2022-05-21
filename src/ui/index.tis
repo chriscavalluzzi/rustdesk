@@ -172,7 +172,7 @@ function getUserName() {
     return '';
 }
 
-function setDarkTheme() {
+function updateTheme() {
     var root_element = self;
     if (handler.get_option("enable-darktheme") == "") {
         // enable dark theme
@@ -399,7 +399,7 @@ class MyIdMenu: Reactor.Component {
                 return " ";
             });
         } else if (me.id == "enable-darktheme") {
-            setDarkTheme();
+            updateTheme();
         } else if (me.id == "about") {
             this.showAbout()
         }
@@ -884,7 +884,7 @@ function self.ready() {
         view.focus = $(#remote_id);
     }
     refreshCurrentUser();
-    setDarkTheme();
+    updateTheme();
 }
 
 function showAbout() {
