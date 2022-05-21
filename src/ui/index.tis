@@ -172,6 +172,19 @@ function getUserName() {
     return '';
 }
 
+function setDarkTheme() {
+    var root_element = self;
+    if (handler.get_option("enable-darktheme") == "") {
+        // enable dark theme
+        stdout.println("Enabling..."); // DEV
+        root_element.attributes.toggleClass("darktheme", true);
+    } else {
+        // disable dark theme
+        stdout.println("Disabling..."); // DEV
+        root_element.attributes.toggleClass("darktheme", false);
+    }
+}
+
 class MyIdMenu: Reactor.Component {
     function this() {
         myIdMenu = this;
@@ -209,6 +222,8 @@ class MyIdMenu: Reactor.Component {
                 <li #logout>{translate('Logout')} ({username})</li> :
                 <li #login>{translate('Login')}</li>}
                 {handler.is_ok_change_id() && key_confirmed ? <li #change-id>{translate('Change ID')}</li> : ""}
+                <div .separator />
+                <li #enable-darktheme><span>{svg_checkmark}</span>{translate('Dark Theme')}</li>
                 <div .separator />
                 <li #about>{translate('About')} {" "}{handler.get_app_name()}</li>
             </menu>
@@ -383,6 +398,8 @@ class MyIdMenu: Reactor.Component {
                 check_status();
                 return " ";
             });
+        } else if (me.id == "enable-darktheme") {
+            setDarkTheme();
         } else if (me.id == "about") {
             this.showAbout()
         }
