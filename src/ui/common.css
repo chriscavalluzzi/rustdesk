@@ -9,6 +9,7 @@ html {
     var(placeholder): #aaa;
     var(lighter-text): #888;
     var(light-text): #666;
+    var(menu-hover): #D7E4F2;
     var(dark-red): #A72145;
     var(dark-yellow): #FBC732;
     var(dark-blue): #2E2459;
@@ -18,7 +19,6 @@ html {
     var(light-green): #D4EAB7;
     var(dark-green): #5CB85C;
     var(blood-red): #F82600;
-    var(menu-hover): #D7E4F2;
 }
 
 html.darktheme {
@@ -31,18 +31,6 @@ html.darktheme {
     var(light-text): #999;
     var(lighter-text): #777;
     var(placeholder): #555;
-
-    var(button): #2C8CFF;
-    var(hover-border): #999;
-    var(dark-red): #A72145;
-    var(dark-yellow): #FBC732;
-    var(dark-blue): #2E2459;
-    var(green-blue): #197260;
-    var(gray-blue): #2B3439;
-    var(blue-green): #4299bf;
-    var(light-green): #D4EAB7;
-    var(dark-green): #5CB85C;
-    var(blood-red): #F82600;
 }
 
 body {
